@@ -1,0 +1,75 @@
+body{
+    background-image: url('/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif');
+    
+   /* background-repeat: repeat-x; */
+    /*background-repeat: repeat-y;*/
+    background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: right top;
+}
+h1{
+    font-size: 20px;
+}
+h2{
+    color: red
+}
+/* Css document */
+/*
+Propriedades para formatacao do texto. o textos sera alinhado a direita com cor azul e fonte Arial
+*/
+p{
+    margin-left: 50px;
+    background-color: red;
+    border: 1px;
+    text-align: right;
+    color: rgb(32, 32, 172);
+    font-family: Arial;
+
+}
+/*cor do link*/
+a{
+    color: rgb(26, 194, 20);
+}
+/*Para links não visitados*/
+ a:link {
+    color: rgb(2, 188, 245);
+}
+/*Para links ja visitados*/
+a:visited{
+    color: rgb(226, 8, 8);
+}
+/*Ao passar o mouse sobre os links*/
+a:hover{
+    color: rgb(201, 119, 19);
+}
+/*Links ativos*/
+a:active{
+    color: black;
+}
+
+ul{
+    list-style: square;
+    
+}
+ol{
+    list-style-image: url('/bmw_logo_PNG19705.png');
+}
+table,th,td{
+    border: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th{
+    height: 30px;
+}
+td{
+    padding: 10px;
+}
+li.itemAB{
+    color: rgb(218, 5, 218);
+}
+#A{
+    color: rgb(6, 250, 47);
+}
