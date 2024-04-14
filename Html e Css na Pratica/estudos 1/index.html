@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--------Meta tags--------------->
+    <meta name="description" content="Descrição da pagina">
+    <meta name="keywords" content="palavra-chaves">
+    <meta name="author" content="nome do autor">
+     <!--------Meta tags--------------->
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="Olive">
+    <img src="/imagem_tag_img//tag_img.jpg" alt="tag_img" width="500"><hr>
+    <h1>Atributos</h1>
+
+       <p>< nomedatag atributo1="valor do atributo 1" atributo2="valor do atributo 2"> < / nomedatag>
+        </p> 
+    
+    <h2>Estrutura basica do html</h2>
+        <p>< !DOCTYPE html> <br>
+        < html> <br> 
+        < head>  <br>  
+         ...   < meta charset=”utf-8”> <br>   
+           ... < title>Título da página < /title> <br>  
+        < /head>  <br>
+        < body>  <br>
+
+        < /body> <br>
+        < /html></p><hr>
+    
+    <h3>Separadores</h3>
+        <p>Para começar, dividiremos os separadores em três tipos:
+        Quebra de linha  < br> <br>
+        Parágrafos  < p> <br>
+        Linha horizontal.  < hr> <br> </p> <hr>
+        
+        
+    <h3>Tegs para formatação de textos</h3>
+        <p>h1 -> cabeçalhos
+        < b> -> <b>negrito</b> de destack <br>
+        < strong> -> <strong>negrito</strong> de destack e para representar augo <strong>inportante</strong> <br>
+        < i> -> <i>italico</i> para termos <i>tecnicos</i> <br>
+        < em> -> <em>italico</em> para dar <em>emfaze</em> a uma palavra <br>
+        < u> -> adiciona sublinhado ao texto <br>
+        < sub> o testo se torna  <sub>sub</sub>scrito <br>
+        < sup> -> o texto fica  <sup>sobre</sup>scrito <br></p><hr>
+        
+    <h3>Aplicação de Cores – Background e Foreground</h3> <br>
+        <p>O atributo bgcolor é adicionado da seguinte maneira: <br>
+        < body bgcolor = “COR”>  < /body> <br></p>
+        <p>Exenplo foreground <font color="White">< font color=" Escolha uma cor para fonte ">< /font></font></p> <hr>
+    <h3>Tamanho e estilo do texto</h3>
+        <p><font size="8px" color="Green">< font size= “Tamanho da fonte”></ font></font></p>
+        <p><font face="Verdana" size="5px" color="White" >< font face = “Verdana”> seu texto < /font></font></p> <hr>
+
+    <h2><font color="White">Listas</font></h2>
+        <p>
+            listas não ordenada
+            <ul>
+  <li> <a href="https://www.ev.org.br/">Fundação</a></li>
+  <li> Bradesco</li>
+  <li> Brasil</li>
+</ul>
+        </p>
+        <p>
+        listas ordenadas
+            
+        <ol> 
+            <font color="yellow">
+            <li> Fundação</li>
+            <li> Bradesco</li>
+            <li> Brasil</li></font>
+        </ol>
+        </p>
+        <p>
+        lista de definição
+        <dl> – cria a lista.
+            <dt> – define o termo.
+                <dd> – adiciona a definição.
+        </p>
+        <h3>Com essas três tags básicas, conseguiremos criar a seguinte tabela:</h3>
+        <p>< table> – Tabela
+        < td> – Coluna
+        < tr> – Linha</p>
+
+        <table border="1">
+            <tr>
+                <td> Fundação Bradesco </td>
+                <td> Apostila </td>
+            </tr>
+            <tr>
+                <td> Fundação Bradesco </td>
+                <td> Apostila </td>
+            </tr>
+        </table> <hr>
+        <h3>Formulários – Forms</h3>
+        <p>
+            De modo geral, o formulário é composto de: <br>
+            Text area – campo de texto. <br>
+            Radio buttons – botões radiais. <br>
+            Checkboxes – caixas de seleção.  <br>
+            Outros widgets – componentes. <br>
+        </p>
+        <p>< form action=" "  method = " ">  < /form></p>
+        <h4>Action</h4>
+            <p>O atributo action define o destino dos dados que foram coletados. <br> De modo geral, o valor inserido nesse atributo é um URL.</p>
+        <h4>Method</h4>
+            <p>O atributo method tem a função de definir o método do HTTP <br> que será usado para enviar os dados – GET ou POST.</p>
+        <form action=”/deixaremos-em-branco” method=”post”>
+            <label> Text: </label>
+            <input type=”text”>
+            <label> Password: </label>
+            <input type=”password”>
+            <label> Textarea: </label>
+            <textarea> </textarea >
+            <label type="button"></label>
+            <button type="submit">cadastrar</button><br>
+            <label for="checkbox"></label>
+            <input type="checkbox" name="chekbox" id="chek"><br>
+            <input type="checkbox" name="chekbox1" id="chek1"><br>
+            <input type="checkbox" name="chekbox2" id="chek2"><br>
+            <input type="radio" name="sexo" id="" checked>Masculino
+            <input type="radio" name="sexo" id="">Feminino
+
+        </form><hr>
+    <h3>Tag < select ></h3>
+        <select name="" id="">
+            <option value="verde">verde</option>
+            <option value="vermelho">vermelho</option>
+            <option value="azul">azul</option>
+            <option value="alpha">alpha</option>
+        </select><hr>
+    <h3>Type Hidden – Oculto</h3>
+        <p>O type hidden torna o campo input invisível para o usuário, <br> permitindo, dessa forma, <br> a passagem de dados para o servidor sem a necessidade de interação com o usuário.</p>
+        <label for="">canpo visivel</label>
+        <input type="text" name="" id=""><br>
+        <label for="">campo invisivel</label>
+        <input type="hidden" name="pais" value="Brasil"> <hr>
+    <h2>Tipos de Css</h2>
+    <h3>Css inline</h3>
+        <p>O CSS inline é adicionado junto ao código HTML por meio do atributo style. Isso permite atribuir novas propriedades e alterar o visual do elemento. Vejamos:</p>
+
+        <p style="color: rgb(0, 195, 255); font-size: 30px">  
+        < p style="color: rgb(0, 195, 255); font-size: 30px"> Texto aqui < /p> 
+        </p>
+    <h3>Css incorporado</h3>
+        <p>O CSS Incorporado é declarado no início do código HTML <br> e deve ser adicionado dentro da tag < head>. <br> Nesse caso, precisamos abrir e fechar a tag < style>. Vejamos:</p>
+        <p style="color: rgb(0, 195, 255); font-size: 22px">
+            < style> <br>
+            .....p{ <br>
+                .........color : blue; <br>
+                .........font-size: 30px <br>
+                .........} <br>
+            < /style>
+        </p>
+    <h3>Css linkado ou externo</h3>
+        <p>O CSS linkado, também conhecido como Externo, <br> é aquele cujas regras CSS são declaradas em um documento a parte do documento HTML, <br> ou seja, é necessário criar um arquivo com a extensão .css separado do arquivo .html.</p>
+        <p style="color: rgb(0, 195, 255); font-size: 18px">< head> <br>
+        < link rel="stylesheet" type="text/css" href="folhadeestilo.css"> <br>
+        < /head></p> <hr>
+        <p style="color: White;"> /* Tudo o que estiver entre as barras vira comentário em Css */ </p> <hr>
+    <h3>Seletores</h3>
+        <p>A estrutura para regras do CSS é: <br>
+        seletor {propriedade: valor;}</p>
+        <table border="1">
+            <tr>
+                <td>Universal</td>
+                <td>*</td>
+                <td>Qualquer elemento.</td>
+            </tr>
+            <tr>
+                <td>Tipo elemento</td>
+                <td>< e></td>
+                <td>Seleciona qualquer elemento do tipo < e > .</td>
+            </tr>
+            <tr>
+                <td>Classe</td>
+                <td>.</td>
+                <td>Seleciona os elementos que contêm a classe.</td>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td>#</td>
+                <td>Seleciona o elemento identificado com ID.</td>
+            </tr>
+            <tr>
+                <td>Link</td>
+                <td>a</td>
+                <td>Seleciona a pseudo-class link.</td>
+            </tr>
+            <tr>
+                <td>Hover</td>
+                <td>:hover</td>
+                <td>É aplicada quando posicionamos o mouse sobre o elemento.</td>
+            </tr>
+        </table>
+    <h3>Propriedades de Folha de Estilo</h3>
+        <p>Na tabela que acabamos de ver, pudemos notar que tanto as classes como o ID são seletores. <br> Nesse sentido, ambos desempenham um papel fundamental no desenvolvimento web. <br> 
+
+            No CSS, as classes possuem uma função muito importante. <br> Vamos entender por quê! <br>
+
+            O ID possibilita a identificação de um elemento por vez. <br> Já as classes permitem identificar mais de um elemento ao mesmo tempo e aplicar formatação de forma exemplar. </p>
+        <p>Aplicação no HTML
+        < p class='nome da classe'>Seu texto < /p> <br> <br>
+
+        É possível aplicar mais de uma class em cada elemento: <br> <br>
+
+        < p class='primeira da classe segunda class'> Seu texto < /p> <br> <br>
+
+        Também podemos adicionar a mesma class em vários elementos: <br> <br>
+
+        < p class='primeira da classe'>Primeiro parágrafo< /p> <br>
+        < p class='primeira da classe'>Segundo parágrafo< /p> <br>
+        < p class='primeira da classe'>Terceiro parágrafo< /p> <br> <br>
+       <strong>Dica rápida!</strong>  <br> <br>
+        É muito importante não utilizarmos o mesmo nome para os IDs e as classes.
+        <br> Desse modo, evitamos conflitos. 
+        <br>Também não é aconselhável colocar ID e class no mesmo elemento.
+        <br> No entanto, isso é possível. Vejamos: <br><br>
+
+        < p id='amigo1' class='amigo2'> <br> Seu texto < /p> <br>
+        < p id='amigo3' class='amigo2'> <br> Seu texto < /p></p> <hr>
+    <h3>Insersão de imagens</h3>
+        <h6>Background-color</h6>
+        <p>Define a cor do fundo de um elemento.</p>
+        <h6>Background-image</h6>
+        <p>Insere uma imagem como fundo do elemento.</p>
+        <h6>Background-size</h6>
+        <p>Configura o tamanho da imagem no elemento.</p>
+        <h6>Background-position</h6>
+        <p>Define a posição da imagem em relação à caixa.</p>
+        <h6>Background-attachment</h6>
+        <p>Define se a imagem de fundo rolará com a tela.</p>
+        <h6>Background-repeat</h6>
+        <p>Define se a imagem de fundo pode se repetir ou não.</p> <hr>
+    <h3>Formatação de Listas com Propriedades CSS</h3>
+        <p><strong>List-style-type</strong> <br>
+        O list-style-type é responsável por configurar o tipo de marcador que a lista irá utilizar.</p>
+        <p><strong>List-style-position</strong><br>
+        O list-style-position define a posição do marcador da lista.
+        </p>
+        <p><strong>List-style-image</strong> <br>
+        O list-style-image define se os marcadores da lista serão imagens.
+        </p> <hr>
+    <h3>Linguagem HTML</h3>
+        <p>Segundo os padrões do W3C, <br> os sites são divididos em três camadas.</p>
+        <h5>Informação</h5>
+            <p>A camada de informação deve ser desenvolvida <br> com códigos HTML ou XHTML.</p>
+        <h5>Formatação</h5>
+            <p>A camada de formatação deve utilizar folha de estilo (CSS) <br> para formatação das informações.</p>
+        <h5>Comportamento</h5>
+            <p>A camada de comportamento deve usar Java script ou Ajax <br> para definir o comportamento mediante as ações dos usuários.</p> <hr>
+    <h3>Tableless</h3>
+        <p>Um site que utiliza os padrões desenvolvidos pelo W3C é considerado um site Tableless. <br>Desse modo, um site Tableless não usa tabelas na composição de seu layout.</p>
+        <p>No lugar das tabelas, um site Tableless utiliza as três camadas <br> (informação, formatação e comportamento).</p>
+        <p>Em HTML, existe um elemento que auxilia a composição de sites Tableless. <br> Você sabe de que elemento estamos falando?</p>
+        <p>As divs < div> são essenciais na composição de sites Tableless!</p><hr>
+    <h3>Divs</h3>
+        <p>O nome div vem da palavra divisão. Nesse sentido, a função da div é dividir trechos de códigos HTML. </p>
+    <h2>Identificação da div</h2>
+        <p>Para identificar uma div específica, você pode utilizar o atributo ID.</p>
+        <p>< div id='divtexto'> <br>
+        ............< h1> O título < /h1> <br>
+        ............< p> Aqui vai o texto < /p> <br>
+        ............< img src='endereço da imagem' alt='descrição curta da imagem'><br>
+        < /div></p>
+    <h3>Formatação em divs diferentes</h3>
+        <p>Para usar a mesma formatação em várias divs diferentes, podemos utilizar o atributo CLASS. </p>
+        <p>
+        < div class='configtexto'> <br>
+	    .........< p> Aqui vai o texto < /p> <br>
+        < /div</p>
+    <h3>Utilização de dois atributos juntos</h3>
+        <p>
+        < div id='divtexto' class='configtexto'> <br>
+        ...........< h1> O título < /h1> <br>
+        ...........< p> Aqui vai o texto < /p> <br>
+        ...........< img src='endereço da imagem' alt='descrição curta da imagem'> <br>
+        < /div>
+        </p>
+
+
+</body>
+</html>
