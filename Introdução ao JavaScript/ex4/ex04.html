@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>corversor de ordem crecente</title>
+</head>
+<body>
+    <h1>ola</h1>
+
+    <script>
+        var n1;
+        var n2;
+        var n3;
+
+        var n1 = window.prompt('escreva um numero');
+        var n2 = window.prompt('escreva o segundo numero?');
+
+        document.write(`Primeiro numero digitado ${n1} <br><br>`);
+        document.write(`segundo numero digitado ${n2}<br><br>`);
+        if (n1 > n2) {
+            n3 = n1
+            n1 = n2
+            n2 = n3
+        }
+        document.write(`<strong>Clasificação</strong> em ordem crecente <ul><li><strong>${n1}</strong></li> e <li><strong>${n2}</strong></li></ul>`)
+
+    </script>
+</body>
+</html>
